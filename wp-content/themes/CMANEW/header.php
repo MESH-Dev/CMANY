@@ -65,5 +65,26 @@
 <link rel="stylesheet" media="screen" href="<?php bloginfo( 'template_url' ); ?>/css/ie.css" />
 <![endif]-->
 <meta name="google-site-verification" content="IgyERgUFS5ccnEs0twEQ7KVwhMw-o9xBEljrP-fpzYc" />
+
+// <?php if (is_page(6587)) {//visit-us
+		echo '<script src="//load.sumome.com/" data-sumo-site-id="a3a17e98bc3f1ff9c80d3cbf4da82c609160ddd886bc82efb613d8f7e7c7b72b" async="async"></script>';
+	}
+	elseif (is_page('events')){ //events page
+		echo '<script src="//load.sumome.com/" data-sumo-site-id="53ade6799ea829919a8b56476eaf0eace77d111d67034146c02a6f5dc0cc0611" async="async"></script>';
+	}
+	elseif (is_page(40)){ //classes
+		echo '<script src="//load.sumome.com/" data-sumo-site-id="174c7b9b64f456d52433f3172257d56ab1258d80b60eddc9a08bb329bb371c9e" async="async"></script>';
+	}
+	elseif (is_page(71)){ //schools-and-community
+		echo '<script src="//load.sumome.com/" data-sumo-site-id="66fd6780c5fabad9c84b8949762f4023bcfd67b2d90e4c305f771614d063dd48" async="async"></script>';
+	}
+	elseif (is_page(472)){ //rentals
+		echo '<script src="//load.sumome.com/" data-sumo-site-id="7c1224c391b9919b3a8be99f31db4c2569ec8ef664536dda9e9c3f0f7c2de704" async="async"></script>';
+	}
+	elseif (is_front_page()){ //home
+		echo '<script src="//load.sumome.com/" data-sumo-site-id="796039e81af1fd6d9f69625f4904b3d2a74c34856b8d641782b35b0f165dc9d1" async="async"></script>';
+	}
+?>
+
 </head>
 <body<?php body_class(); ?>>

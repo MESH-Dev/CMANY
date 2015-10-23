@@ -180,7 +180,7 @@
   </div>
   <!--END PAGE-NEW-->
 </div>
-<script src="//load.sumome.com/" data-sumo-site-id="53ade6799ea829919a8b56476eaf0eace77d111d67034146c02a6f5dc0cc0611" async="async"></script>
+
 <?php get_footer(); ?>
 
 

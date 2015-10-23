@@ -33,6 +33,5 @@ get_header('nav');
 
   <!--END PAGE-NEW-->
 </div>
-<script src="//load.sumome.com/" data-sumo-site-id="796039e81af1fd6d9f69625f4904b3d2a74c34856b8d641782b35b0f165dc9d1" async="async"></script>
 
 <?php get_footer(); ?>
