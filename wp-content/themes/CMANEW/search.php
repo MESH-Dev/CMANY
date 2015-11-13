@@ -34,7 +34,7 @@
 
             <div class="top-search" style="margin-top: 30px;">
               <form method="get" id="search" action="<?php echo home_url( '/' ); ?>">
-                <input name="s" id="s" type="text" size="40" placeholder="Search..." />
+                <input name="s" id="s" type="text" size="40" placeholder="Search Here..." />
               </form>
             </div>
 

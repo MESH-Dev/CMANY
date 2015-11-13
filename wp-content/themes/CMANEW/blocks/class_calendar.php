@@ -374,7 +374,7 @@ if($current_week == '01' && $current_year == 2016){
           if($fields['featured'] == "Yes") { ?>
       <div class="event_featured_icon">
         
-            <img src="<?php bloginfo( 'template_url' ); ?>/images/event-featured.png" >
+            <img alt="This is a featured event" src="<?php bloginfo( 'template_url' ); ?>/images/event-featured.png" >
         
       </div>
 <?php } ?>
@@ -391,9 +391,9 @@ if($current_week == '01' && $current_year == 2016){
       <div class="event_content">
 <?php //echo get_post_field('post_content', $post->ID);?>
 <?php  echo get_excerpt_by_id($post->ID); ?>
-        <a class="event_more" href="<?php echo get_permalink($post->ID); ?>">
+        <!-- <a class="event_more" href="<?php //echo get_permalink($post->ID); ?>">
            READ MORE &rsaquo;&rsaquo;
-        </a>
+        </a> -->
       </div>
   
      

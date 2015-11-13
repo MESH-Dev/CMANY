@@ -178,52 +178,100 @@ $(document).ready(function(){
   */
 
     //HOVER
-    $(".primary,.secondary").hover(
+    // $(".primary,.secondary").hover(
 
-        //IN
-        function(){
+    //     //IN
+    //     function(){
 
-            //ANIMATE HEADER
-            $("#header").stop().animate({
-                'height':240
-            },300);
+    //         //ANIMATE HEADER
+    //         $("#header").stop().animate({
+    //             'height':240
+    //         },300);
 
-            //SUBMENU
-            $(".secondary").slideDown(300);
+    //         //SUBMENU
+    //         $(".secondary").slideDown(300);
 
-            //LOGO
-           $("#sidebar-new").stop().animate({'margin-top':'311px'},300);
+    //         //LOGO
+    //        $("#sidebar-new").stop().animate({'margin-top':'311px'},300);
 
-            //IF TOUCHSCREEN
-            if ('ontouchstart' in document.documentElement) {
-              $("#closeMenu").fadeIn(500);
-            }
+    //         //IF TOUCHSCREEN
+    //         if ('ontouchstart' in document.documentElement) {
+    //           $("#closeMenu").fadeIn(500);
+    //         }
 
-        //END IN
-        },
+    //     //END IN
+    //     },
 
-        //OUT
-        function(){
+    //     //OUT
+    //     function(){
 
-             //ANIMATE HEADER
-            $("#header").stop().animate({
-                'height': 48
-            }, 300);
+    //          //ANIMATE HEADER
+    //         $("#header").stop().animate({
+    //             'height': 48
+    //         }, 300);
 
-            //LOGO
-           $("#sidebar-new").stop().animate({'margin-top': '120px'},300);
+    //         //LOGO
+    //        $("#sidebar-new").stop().animate({'margin-top': '120px'},300);
 
-            //IF TOUCHSCREEN
-            if ('ontouchstart' in document.documentElement) {
-              $("#closeMenu").fadeOut(100);
-            }
+    //         //IF TOUCHSCREEN
+    //         if ('ontouchstart' in document.documentElement) {
+    //           $("#closeMenu").fadeOut(100);
+    //         }
 
-        //END OUT
-        }
+    //     //END OUT
+    //     }
 
-    //END HOVER
-    );
+    // //END HOVER
+    // );
 
+    //  //FOCUS
+    // $(".menu li a").keyup(
+
+    //     //IN
+    //     function(){
+
+    //         //ANIMATE HEADER
+    //         $("#header").stop().animate({
+    //             'height':240
+    //         },300);
+
+    //         $(this).addClass('tabbed');
+
+    //         //SUBMENU
+    //         $(".secondary").slideDown(300);
+
+    //         //LOGO
+    //        $("#sidebar-new").stop().animate({'margin-top':'311px'},300);
+
+    //         //IF TOUCHSCREEN
+    //         if ('ontouchstart' in document.documentElement) {
+    //           $("#closeMenu").fadeIn(500);
+    //         }
+
+    //     //END IN
+    //     },
+
+    //     //OUT
+    //     function(){
+
+    //          //ANIMATE HEADER
+    //         $("#header").stop().animate({
+    //             'height': 48
+    //         }, 300);
+
+    //         //LOGO
+    //        $("#sidebar-new").stop().animate({'margin-top': '120px'},300);
+
+    //         //IF TOUCHSCREEN
+    //         if ('ontouchstart' in document.documentElement) {
+    //           $("#closeMenu").fadeOut(100);
+    //         }
+
+    //     //END OUT
+    //     }
+
+    // //END FOCUS
+    // );
 
     //CLICK CLOSE BUTTON
     $("#closeMenu").click(function(){
@@ -250,14 +298,26 @@ $(document).ready(function(){
     */
 
 
+    // $('.menu ul.sub-menu').css({'height':0});
 
+    $('ul.sub-menu').hide();
+    $('ul.menu a').hover(function(){
+      $('ul.sub-menu').show();
+      $("#sidebar-new").stop().animate({'margin-top':'644px'},300);
+    });
 
-
+    $('ul.menu a').keypress(function(){
+      $('ul.sub-menu').show();
+      $("#sidebar-new").stop().animate({'margin-top':'120px'},300);
+    });
 
 
     $('#carousel').carouFredSel({
           width: '100%',
           align:'center',
+          pause: true,
+          play: false,
+          auto: false,
           items: {
             visible: 3,
             start: -1
@@ -265,7 +325,8 @@ $(document).ready(function(){
           scroll: {
             items: 1,
             duration: 1000,
-            timeoutDuration: 7000
+            timeoutDuration: 7000,
+            pauseOnHover: true
           },
           prev: '#prev',
           next: '#next',
@@ -310,10 +371,12 @@ $( window ).load(function(){
             visible: 1,
             start: -1
           },
+          auto:false,
           scroll: {
             items: 1,
             duration: 700,
             timeoutDuration: 6000,
+            pauseOnHover: true,
             fx: "crossfade"
           }},{
           debug: true

@@ -71,7 +71,7 @@
 							$queryString = http_build_query($vars);
 							$filters = get_terms('age','hide_empty=0');
 							foreach($filters as $filter){
-								echo "<li><a href='".$baseURL."?".$queryString."&filtAge=".$filter->slug."'>".$filter->name."</a></li>";
+								echo "<li><a tabindex='-1' href='".$baseURL."?".$queryString."&filtAge=".$filter->slug."'>".$filter->name."</a></li>";
 							}
 						?>
 	            	</ul>
@@ -84,7 +84,7 @@
 							$queryString = http_build_query($vars);
 							$filters = get_terms('category',"hide_empty=0&exclude=164,163,130,,217");
 							foreach($filters as $filter){
-								echo "<li><a href='".$baseURL."?".$queryString."&filtCat=".$filter->slug."'>".$filter->name."</a></li>";
+								echo "<li><a tabindex='-1' href='".$baseURL."?".$queryString."&filtCat=".$filter->slug."'>".$filter->name."</a></li>";
 							}
 						?>
 	            	</ul>
@@ -97,7 +97,7 @@
 							$queryString = http_build_query($vars);
 							$filters = get_terms('location','hide_empty=0');
 							foreach($filters as $filter){
-								echo "<li><a href='".$baseURL."?".$queryString."&filtLoc=".$filter->slug."'>".$filter->name."</a></li>";
+								echo "<li><a tabindex='-1' href='".$baseURL."?".$queryString."&filtLoc=".$filter->slug."'>".$filter->name."</a></li>";
 							}
 						?>
 	            	</ul>

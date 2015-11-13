@@ -7,7 +7,7 @@ get_sidebar('mainnew');
 get_header('nav'); ?>
 
 <!--PAGE-NEW-->
-<div id="page-new" >
+<div id="page-new" class="accget" >
   <!--PAGE-CONTAINER -->
   <div id="page-container" class="new_page">
 <?php while ( have_posts() ) : the_post(); ?>

@@ -40,10 +40,13 @@
         while(the_repeater_field('blocks')): ?>     
         <div class="listing-item title-<?php echo $ctr; ?><?php the_sub_field('block-title');?>" href="<?php the_sub_field('block-link');?>">
 		  <?php 
-              $attachment_id = get_sub_field('block-image');
+              //$attachment_id = get_sub_field('block-image');
+              $block_image = get_sub_field('block-image');
+              $block_imageUrl = $block_image['url'];
+              $block_imageAlt = $block_image['alt'];
               $size = "blockimage";  
               $image =  wp_get_attachment_image( $attachment_id, $size );   ?>
-            <img src="<?php the_sub_field('block-image')?>" />
+            <img alt="<?php echo $block_imageAlt; ?>" src="<?php echo $block_imageUrl; ?>" /><!--<?php //the_sub_field('block-image')?>-->
 		           
 		      <div class="subtitle">
 		          <h3><?php the_sub_field('block-title');?></h3>

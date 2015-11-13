@@ -95,9 +95,9 @@
 	      <div class="home_event_content" style="width: 190px;">
 	   <?php //echo get_post_field('post_content', $post->ID);?>
 	        <p><?php  echo get_excerpt_by_id($post->ID); ?></p>
-	        <a class="event_more" href="<?php echo get_permalink($post->ID); ?>">
+	        <p class="event_more"><!-- href="<?php //echo get_permalink($post->ID); ?>" -->
 	           READ MORE &rsaquo;&rsaquo;
-	        </a>
+	        </p>
 	      </div>
 	    </div>
 

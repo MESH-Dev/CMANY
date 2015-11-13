@@ -44,12 +44,12 @@
 		    			$neweventLocation = str_replace(' ', '%20', $eventLocation);
 		    			$neweventDetails = str_replace(' ', '%20', $eventDetails);
 		    		?>
-		    			<li id="googleLink"><a href="http://www.google.com/calendar/event?action=TEMPLATE&dates=<?php echo $startDate; ?>T<?php echo $startTime; ?>00Z%2F<?php echo $endDate; ?>T<?php echo $endTime; ?>00Z&text=<?php echo $neweventTitle; ?>&location=&details=<?php echo $neweventDetails; ?>">&#43; Google Calendar</a></li>
+		    			<li id="googleLink"><a href="http://www.google.com/calendar/event?action=TEMPLATE&amp;dates=<?php echo $startDate; ?>T<?php echo $startTime; ?>00Z%2F<?php echo $endDate; ?>T<?php echo $endTime; ?>00Z&text=<?php echo $neweventTitle; ?>&location=&details=<?php echo $neweventDetails; ?>">&#43; Google Calendar</a></li>
 		    			<li><a href="#">iCal Import</a></li>
 		    		</ul>
 	    		</div>
 
-        	<h2><img src="<?php bloginfo('template_directory'); ?>/images/eventTitleArrow.png" /><?php the_title(); ?></h2>
+        	<h2><img aria-hidden="true" src="<?php bloginfo('template_directory'); ?>/images/eventTitleArrow.png" /><?php the_title(); ?></h2>
 
         	<div class="block">
 		   <?php get_template_part('blocks/banner-script'); ?>

@@ -22,7 +22,7 @@
         <div class="block calendar_filter">
           <div class="cal_viewby">
             View By:
-            <a id="daily" href="<?php echo site_url(); ?>/events/?cur_month=<?php echo $nnow_month; if($new_yr){echo'&cur_year='.$new_yr;}?>&view=day&today=<?php echo $now_day;?>" >Dailly</a>
+            <a id="daily" href="<?php echo site_url(); ?>/events/?cur_month=<?php echo $nnow_month; if($new_yr){echo'&cur_year='.$new_yr;}?>&amp;view=day&amp;today=<?php echo $now_day;?>" >Dailly</a>
 
             <a class="active" id="weekly"  href="<?php echo site_url(); ?>/events/?cur_week=<?php echo $current_week;?><?php if($new_yr){echo'&cur_year='.$new_yr;}?>">Weekly</a>
           </div>
@@ -39,7 +39,7 @@
 					if ($count > 0) { ?>
 						<ul>
 						<?php foreach($terms as $term){ ?>
-							<li><a href="<?php echo $actual_link; ?>&age_filter=<?php echo $term->slug; ?>"><?php echo $term->name; ?></a></li>
+							<li><a href="<?php echo $actual_link; ?>&amp;age_filter=<?php echo $term->slug; ?>"><?php echo $term->name; ?></a></li>
 						<?php } ?>
 						</ul>
 					<?php } ?>
@@ -58,7 +58,7 @@
                  if ($term->slug == 'exhibition' || $term->slug == 'special-event'){ echo "aaaa";}
                  else{
               ?>
-							<li><a href="<?php echo $actual_link; ?>&loc_filter=<?php echo $term->slug ;  ?>"><?php echo $term->name; ?></a></li>
+							<li><a href="<?php echo $actual_link; ?>&amp;loc_filter=<?php echo $term->slug ;  ?>"><?php echo $term->name; ?></a></li>
 						<?php } }?>
 						</ul>
 					<?php } ?>
@@ -70,7 +70,7 @@
 					if ($count > 0) { ?>
 						<ul>
 						<?php foreach($terms as $term){ ?>
-							<li><a href="<?php echo $actual_link; ?>&loc_filter=<?php echo $term->slug; ?>"><?php echo $term->name; ?></a></li>
+							<li><a href="<?php echo $actual_link; ?>&amp;loc_filter=<?php echo $term->slug; ?>"><?php echo $term->name; ?></a></li>
 						<?php } ?>
 						</ul>
 					<?php } ?>
@@ -80,8 +80,8 @@
         </div>
 
         <div class="block calendar_nav">
-          <div id="cal_next_week"><a href="<?php echo site_url(); ?>/events/?week=next&cur_week=<?php echo $next_week;?><?php if($new_yr){echo'&cur_year='.$new_yr;}?>">Next Week</a></div>
-          <div id="cal_prev_week"><a href="<?php echo site_url(); ?>/events/?week=prev&cur_week=<?php echo $last_week;?><?php if($last_yr){echo'&cur_year='.$last_yr;}?>">Prev Week</a></div>
+          <div id="cal_next_week"><a href="<?php echo site_url(); ?>/events/?week=next&amp;cur_week=<?php echo $next_week;?><?php if($new_yr){echo'&cur_year='.$new_yr;}?>">Next Week</a></div>
+          <div id="cal_prev_week"><a href="<?php echo site_url(); ?>/events/?week=prev&amp;cur_week=<?php echo $last_week;?><?php if($last_yr){echo'&cur_year='.$last_yr;}?>">Prev Week</a></div>
         </div>
 
 

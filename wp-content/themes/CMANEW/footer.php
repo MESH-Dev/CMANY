@@ -7,7 +7,7 @@
 
               <div class="imgcol">
                 <a href="http://www.cmany.org/visit-us-2/">
-                  <img src="<?php bloginfo( 'template_url' )?>/images/map.png" />
+                  <img alt="Map of CMANY location" src="<?php bloginfo( 'template_url' )?>/images/map.png" />
                 </a>
               </div>
               <div class="acol">
@@ -20,11 +20,11 @@
               </div>
               <div class="acol">
                   <h4>ADMISSION</h4>
-                  Ages 1-65: &nbsp;&nbsp;$12<br>
-                  Ages < 1: &nbsp;&nbsp;&nbsp;Free<br>
-                  Ages 65+: &nbsp;&nbsp;Pay As You Wish<br>
+                  Ages 1 to 65: &nbsp;&nbsp;$12<br>
+                  Under 1: &nbsp;&nbsp;Free<br>
+                  Ages 65 plus: &nbsp;&nbsp;Pay As You Wish<br>
                   <br>
-                  Thursdays 4-6PM: <br>
+                  Thursdays 4 to 6PM: <br>
                   Pay As You Wish<br>
               </div>
               <div class="clear">&nbsp;</div>
@@ -47,13 +47,13 @@
 
             <div class="footer-right">
               <h4>Follow Us!</h4>
-               <a target="_blank" href="http://on.fb.me/nqqBkf"><img src="<?php bloginfo( template_url  )?>/images/facebookg.png" /></a>
-               <a target="_blank" href="http://twitter.com/#!/CMAinNYC"><img src="<?php bloginfo( 'template_url' )?>/images/twitterg.png" /></a>
-               <a target="_blank" href="http://www.flickr.com/photos/cma_in_nyc/"><img src="<?php bloginfo( 'template_url' )?>/images/flickrg.png" /></a>
+               <a target="_blank" href="http://on.fb.me/nqqBkf"><img alt="Follow us on Facebook" src="<?php bloginfo( template_url  )?>/images/facebookg.png" /></a>
+               <a target="_blank" href="http://twitter.com/#!/CMAinNYC"><img alt="Find us on Twitter" src="<?php bloginfo( 'template_url' )?>/images/twitterg.png" /></a>
+               <a target="_blank" href="http://www.flickr.com/photos/cma_in_nyc/"><img alt="See our photo stream on flickr" src="<?php bloginfo( 'template_url' )?>/images/flickrg.png" /></a>
                <br><bR>
-               <a target="_blank" href="http://instagram.com/cmainnyc"><img src="<?php bloginfo( 'template_url' )?>/images/instagramg.png" /></a>
-               <a target="_blank" href="http://vimeo.com/cmainnyc"><img src="<?php bloginfo( 'template_url' )?>/images/vimeog.png" /></a>
-               <a target="_blank" href="http://blog.cmany.org/"><img src="<?php bloginfo( 'template_url' )?>/images/blog_white.png" /></a>
+               <a target="_blank" href="http://instagram.com/cmainnyc"><img alt="Follow us on Instagram" src="<?php bloginfo( 'template_url' )?>/images/instagramg.png" /></a>
+               <a target="_blank" href="http://vimeo.com/cmainnyc"><img alt="Watch our videos on Vimeo" src="<?php bloginfo( 'template_url' )?>/images/vimeog.png" /></a>
+               <a target="_blank" href="http://blog.cmany.org/"><img alt="View our Blog" src="<?php bloginfo( 'template_url' )?>/images/blog_white.png" /></a>
             </div>
 
 

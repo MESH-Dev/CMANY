@@ -66,7 +66,7 @@
 <![endif]-->
 <meta name="google-site-verification" content="IgyERgUFS5ccnEs0twEQ7KVwhMw-o9xBEljrP-fpzYc" />
 
-// <?php if (is_page(6587)) {//visit-us
+<?php if (is_page(6587)) {//visit-us
 		echo '<script src="//load.sumome.com/" data-sumo-site-id="a3a17e98bc3f1ff9c80d3cbf4da82c609160ddd886bc82efb613d8f7e7c7b72b" async="async"></script>';
 	}
 	elseif (is_page('events')){ //events page
@@ -84,7 +84,32 @@
 	elseif (is_front_page()){ //home
 		echo '<script src="//load.sumome.com/" data-sumo-site-id="796039e81af1fd6d9f69625f4904b3d2a74c34856b8d641782b35b0f165dc9d1" async="async"></script>';
 	}
-?>
+	
+
+	if (is_front_page() || is_page(436)){
+		?>
+		<!-- Facebook Pixel Code -->
+
+		<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','//connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '906580689437201');
+		fbq('track', "PageView");</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=906580689437201&amp;ev=PageView&amp;noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+
+				<?php
+				}
+	?>
 
 </head>
-<body<?php body_class(); ?>>
+<body <?php body_class(); ?>>
+
+<div class="skiptocontent">
+	<a href="#page-container">Skip to main content</a>
+</div>

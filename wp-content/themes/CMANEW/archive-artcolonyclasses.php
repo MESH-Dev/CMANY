@@ -30,7 +30,7 @@
         <div class="block calendar_filter">
           <div class="cal_viewby">
             View By:
-            <a<?php
+            <a <?php
             		if(isset($_GET['view'])){
             			if($_GET['view'] == 'day'){
 	            			echo 'class="active"';

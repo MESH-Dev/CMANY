@@ -36,27 +36,34 @@
 
     <div class="block">
    <?php while(the_repeater_field('blocks')): ?>
+   <!--<?php //if (have_rows('blocks')) : 
+          //while (have_rows('blocks') : the_row(); ?>-->
         <div class="overview-item" href="<?php the_sub_field('block-link');?>">
 		  <?php
-              $attachment_id = get_sub_field('block-image');
+              //$attachment_id = get_sub_field('block-image');
+              $blockimage = get_sub_field('block-image');
+              $blockimageUrl = $blockimage['url'];
+              $blockimageAlt = $blockimage['alt'];
+              //var_dump($blockimageUrl);
               $size = "blockimage";
               $image =  wp_get_attachment_image( $attachment_id, $size );   ?>
-            <img src="<?php the_sub_field('block-image')?>" />
+            <img alt="<?php echo $blockimage['alt'] ?>" src="<?php echo $blockimage['url'] ?>" />
 
 
 		      <a  href="<?php the_sub_field('block-link');?>" >
-  		      <div class="subtitle" style="top: -60px">
+  		      <div aria-has-popup="true" class="subtitle" style="top: -60px">
+
   		          <h3><?php the_sub_field('block-title');?></h3>
   		     <?php the_sub_field('block-description');?>
 
            <?php if(get_sub_field('block-link') != ''){ ?>
-  		          <a class="read-more" href="<?php the_sub_field('block-link');?>" >LEARN MORE >></a>
-
+  		          <p class="read-more">LEARN MORE >></p><!-- href="<?php //the_sub_field('block-link');?>" -->
+                <!-- <div class="close">Close</div> -->
            <?php } ?>
   		      </div>
           </a>
     	 	</div>
-  <?php endwhile ?>
+  <?php endwhile;  ?>
 
 
 

@@ -253,7 +253,7 @@
 						<?php echo get_the_title($postID); ?>
 						        </a>
 						      </h2>
-						      <div class="event_location">
+						      <div class="event_location"><span class="sr-only">Location</span>
 						<?php
 									$locations = wp_get_post_terms($postID, 'location', array('fields' => 'names'));
 									if($locations){
@@ -269,7 +269,7 @@
 									}
 						        ?>
 						      </div>
-						      <div class="event_cats">
+						      <div class="event_cats"><span class="sr-only">Categories</span>
 								<?php
 								  	$categories = wp_get_post_categories($postID, array('fields' => 'names'));
 								  	if($categories){
@@ -288,7 +288,7 @@
 									}
 								  ?>
 						      </div>
-						      <div class="event_ages">
+						      <div class="event_ages"><span class="sr-only">For ages</span>
 								<?php
 								  	$ages = wp_get_post_terms($postID, 'age', array('fields' => 'names'));
 								  	if($ages){
@@ -308,7 +308,7 @@
 								  ?>
 						      </div>
 
-						      <div class="event_time">
+						      <div class="event_time"><span class="sr-only">Event time</span>
 								<?php
 								  	$sTime = get_field('start');
 								  	$eTime = get_field('end');
@@ -330,7 +330,7 @@
 						          if($fields['featured'] == "Yes") { ?>
 						      <div class="event_featured_icon">
 
-						            <img src="<?php bloginfo( 'template_url' ); ?>/images/event-featured.png" >
+						            <img alt="Featured event" src="<?php bloginfo( 'template_url' ); ?>/images/event-featured.png" >
 
 						      </div>
 						<?php } ?>

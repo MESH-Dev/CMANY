@@ -258,6 +258,7 @@ jQuery(document).ready(function($){
     $('#carousel').carouFredSel({
           width: '100%',
           align:'center',
+          pause: true,
           items: {
             visible: 3,
             start: -1

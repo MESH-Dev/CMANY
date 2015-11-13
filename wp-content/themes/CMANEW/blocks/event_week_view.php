@@ -8,7 +8,7 @@ if($_GET['view'] == 'week' || $_GET['view'] == ""){?>
 			//SET AGE FILTER
 		    if(isset($_GET['age_filter'])){
 		      $term = get_term_by('slug', $_GET['age_filter'],'age');
-		      echo '<h2>Filter by: "'.$term->name.'"</h2>';
+		      echo '<h2 class="filter">Filter by: "'.$term->name.'"</h2>';
 		    }
 		    //SET LOC FILTER
 		    if(isset($_GET['loc_filter'])){

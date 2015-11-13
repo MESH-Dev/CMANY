@@ -229,7 +229,7 @@
 					}
 		        ?>
 		      </div>
-		      <div class="event_cats">
+		      <div class="event_cats"><span class="sr-only">Categories</span>
 				<?php
 				  	$categories = wp_get_post_categories($postID, array('fields' => 'names'));
 				  	if($categories){
@@ -248,7 +248,7 @@
 					}
 				  ?>
 		      </div>
-		      <div class="event_ages">
+		      <div class="event_ages"><span class="sr-only">For ages</span>
 				<?php
 				  	$ages = wp_get_post_terms($postID, 'age', array('fields' => 'names'));
 				  	if($ages){
@@ -268,7 +268,7 @@
 				  ?>
 		      </div>
 
-		      <div class="event_time">
+		      <div class="event_time"><span class="sr-only">Event time</span>
 				<?php
 				  	$sTime = get_field('start');
 				  	$eTime = get_field('end');

@@ -402,7 +402,7 @@ function tabs_group( $atts, $content = null ) {
 
 
 
-    $output = '<div id="'.$id.'" class="newtabs"><ul class="tabs"   ';
+    $output = '<div id="'.$id.'" class="newtabs"><ul role="tablist" class="tabs"   ';
 
 
     $output.='>'.do_shortcode($content).'</ul>';
@@ -433,12 +433,12 @@ function tab($atts, $content = null) {
 
     //$activeClass = $active == 'y' ? 'current' :'';
     $output = '
-        <li >
+        <li role="presentation">
             <a href="#'.$id.'" class="'.$activeClass.'">'.$title.'</a>
         </li>
     ';
 
-    $tabs_divs.= '<div id="'.$id.'" class="pane '.$activeClass.'" >'.do_shortcode($content).'</div>';
+    $tabs_divs.= '<div role="tabpanel" id="'.$id.'" class="pane '.$activeClass.'" >'.do_shortcode($content).'</div>';
 
     return $output;
 }
